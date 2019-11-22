@@ -1,0 +1,64 @@
+---
+layout: indexx
+title: 我的博客
+
+---
+ 
+    <div id="tf-about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="img/02.png" class="img-responsive">
+                </div>
+                <div class="col-md-6">
+                    <div class="about-text">
+                        <div class="section-title">
+                            <h4>记录</h4>
+                            <h2>一些属于我们的 <strong>故事</strong></h2>
+                            <hr>
+                            <div class="clearfix"></div>
+                        </div>
+                        <p class="intro">这是一篇专属于你的个人博客，在这儿言论自由，可交友，在这颗温暖的星球上用文字找到属于你温暖的话语！</p>
+                        <ul class="about-list">
+                            <li>
+                                <span ></span>
+                                  <strong>视频</strong> - <em>上传视频让更多人认识你！</em>
+                                   </li>
+                                      <li>
+                                          <span ></span>
+                                          <strong>图片</strong> - <em> 上传照片分享你的喜悦！</em>
+                                      </li>
+                                     <li>
+                                    <span ></span>
+                                <strong>文章</strong> - <em>写下文章记录自己的生活方式！</em>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   {% for post in site.posts %}
+    <div id="tf-services" class="text-center">
+        <div class="container">
+            <div class="section-title center">
+                <h2> <strong>{{post.title2}}</strong></h2>
+                <div class="line">
+                    <hr>
+                </div>
+                <div class="clearfix" ></div>
+                <small><em>{{post.zaiyao}}</em></small>
+
+                
+                <p><a href="{{site.baseurl}}{{post.url}}"><button type="button" class="btn btn-info"  >点击阅读</a></button></p>
+            </div>
+            <div class="space"></div>
+          
+
+         </div>
+  {% endfor %}
+  
+    
+   
+ 
